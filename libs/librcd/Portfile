@@ -1,0 +1,21 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# $Id: Portfile 139536 2015-08-19 21:53:46Z ryandesign@macports.org $
+
+PortSystem 1.0
+#PortGroup  cmake  1.0
+
+name             librcd
+version          0.1.14
+categories       textproc
+license          {LGPL-2 MPL-1.1}
+maintainers      nomaintainer
+description      Russian Charset Detection Library
+long_description \
+    Library for russian charset detection. \
+    RusXMMS project
+homepage         http://rusxmms.sourceforge.net/
+platforms        darwin
+master_sites     http://darksoft.org/files/rusxmms/
+checksums           rmd160  b8b3277a1e4ef6e5e6a3d5b636d8b58d9fdcd18f \
+                    sha256  261db28bc864fd4b2d3ba88403b2e421944281e323c1e39c0e61f5160c16b664
+use_bzip2       yes

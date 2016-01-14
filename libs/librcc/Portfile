@@ -1,0 +1,25 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# $Id: Portfile 139536 2015-08-19 21:53:46Z ryandesign@macports.org $
+
+PortSystem 1.0
+
+name             librcc
+version          0.2.12
+categories       textproc
+license          {LGPL-2 MPL-1.1}
+maintainers      nomaintainer
+description      Russian Charset Conversion Library
+long_description \
+    Library for russian charset conversion. \
+    RusXMMS project
+homepage         http://rusxmms.sourceforge.net/
+platforms        darwin
+master_sites     http://darksoft.org/files/rusxmms/
+checksums           rmd160  7f816e33f38013f56103b93404e0c4f979b622e7 \
+                    sha256  207973fbb73e1e376dad7542af17fe428efece91ea7f92a4efbcee676d2cb74b
+use_bzip2        yes
+
+depends_lib-append port:libxml2 \
+                   port:librcd \
+                   port:zlib
+

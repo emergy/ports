@@ -1,0 +1,6 @@
+taglib 570
+variants {debug rcc universal} depends_build path:bin/cmake:cmake portdir audio/taglib description {TagLib Audio Meta-Data Library} homepage http://taglib.github.io/ epoch 0 platforms darwin depends_lib {port:zlib port:librcc} name taglib maintainers nomaintainer license {{LGPL-2 MPL-1.1}} long_description {TagLib is a library for reading and editing the meta-data of several popular audio formats. Currently it supports both ID3v1 and ID3v2 for MP3 files, Ogg Vorbis comments and ID3 tags and Vorbis comments in FLAC files.} categories audio version 1.9.1 revision 0
+librcc 388
+variants universal portdir libs/librcc description {Russian Charset Conversion Library} homepage http://rusxmms.sourceforge.net/ epoch 0 platforms darwin name librcc depends_lib {port:libxml2 port:librcd port:zlib} long_description {Library for russian charset conversion. RusXMMS project} maintainers nomaintainer license {{LGPL-2 MPL-1.1}} categories textproc version 0.2.12 revision 0
+librcd 337
+variants universal portdir libs/librcd description {Russian Charset Detection Library} homepage http://rusxmms.sourceforge.net/ epoch 0 platforms darwin name librcd long_description {Library for russian charset detection. RusXMMS project} license {{LGPL-2 MPL-1.1}} maintainers nomaintainer categories textproc version 0.1.14 revision 0
